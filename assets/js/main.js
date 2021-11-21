@@ -1,6 +1,6 @@
 function insert (num) {
 
-    var number = document.getElementById('result').innerHTML
+    const number = document.getElementById('result').innerHTML
     document.getElementById('result').innerHTML = number + num
 
 }
@@ -13,14 +13,14 @@ function clean () {
 
 function back () {
 
-    var result = document.getElementById('result').innerHTML
+    const result = document.getElementById('result').innerHTML
     document.getElementById('result').innerHTML = result.substring(0, result.length -1)
 
 }
 
 function calculate () {
 
-    var result = document.getElementById('result').innerHTML
+    const result = document.getElementById('result').innerHTML
     if (result) {
 
         document.getElementById('result').innerHTML = eval(result)
